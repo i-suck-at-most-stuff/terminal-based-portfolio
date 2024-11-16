@@ -1,0 +1,97 @@
+body {
+    background-color: #1e1e1e;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+#window-bar {
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#window-title {
+    position: sticky;
+    color: #fff;
+    font-weight: bold;
+}
+
+#window-controls button {
+    position: sticky;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#window-controls button:hover {
+    position: sticky;
+    background-color: #777;
+}
+
+#close:hover {
+    background-color: #333;
+}
+#close:invis{
+    position: sticky;
+    background-color: red;
+}
+#maximize:hover {
+    position: sticky;
+    background-color: green;
+}
+
+#minimize:hover {
+    position: sticky;
+    background-color: yellow;
+}
+
+#terminal {
+    margin: 20px;
+    width: calc(100% - 40px);
+}
+
+pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#prompt {
+    margin-right: 10px;
+}
+
+#input {
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    width: 100%;
+}
+
+html, body {
+    overflow: hidden;
+}

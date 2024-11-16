@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Web Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="window-bar">
+        <div id="window-title">cmd.exe</div>
+        <div id="window-controls">
+            <button id="minimize">-</button>
+            <button id="maximize">□</button>
+            <button id="close">×</button>
+            &nbsp;
+        </div>
+        
+    </div>
+    <br>
+    <br>
+
+    <div id="terminal">
+        <pre id="output"></pre>
+        <div class="input-line">
+            <span id="prompt">C:\\Users\\enter_your_name></span>
+            <input type="text" id="input" autofocus autocomplete="off">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
